@@ -1,0 +1,1 @@
+This repo is for my codecool python projects and to learn more about Github itself.
