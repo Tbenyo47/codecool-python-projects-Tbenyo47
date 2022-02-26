@@ -1,13 +1,18 @@
-def get_hello_message():
- userName = input("What's your name? ")
- if len(userName) != 0:
-    return("Hello, " + userName.capitalize() + ("!"))
- else:
-    return("Hello, World!")
+def get_hello_message(name):
+   if not name:
+      name = "World"
+   return f'Hello, {name}!'
 
+def get_user_name():
+    userName = input("What's your name? ")
+    return userName.capitalize()
 
+ 
+ 
 def say_hello():
- answer = get_hello_message()
- print(answer)
+   outputName = get_user_name()
+   answer = get_hello_message(outputName)
+   print (answer) 
+
 
 say_hello()
